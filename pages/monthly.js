@@ -2,7 +2,7 @@ import Head from "next/head";
 import "tailwindcss/tailwind.css";
 import Card from "../components/Card";
 import Profile from "../components/Profile";
-const Home = () => {
+const Monthly = () => {
   const cards = [
     {
       title: "Work",
@@ -226,13 +226,13 @@ const Home = () => {
         <title>TimeTrackingApp</title>
       </Head>
 
-      <Profile focus="daily">
-        <Card card={cards[0]} tiempo="daily" />
-        <Card card={cards[1]} tiempo="daily" />
-        <Card card={cards[2]} tiempo="daily" />
-        <Card card={cards[3]} tiempo="daily" />
-        <Card card={cards[4]} tiempo="daily" />
-        <Card card={cards[5]} tiempo="daily" />
+      <Profile focus="monthly">
+        <Card card={cards[0]} tiempo="monthly" />
+        <Card card={cards[1]} tiempo="monthly" />
+        <Card card={cards[2]} tiempo="monthly" />
+        <Card card={cards[3]} tiempo="monthly" />
+        <Card card={cards[4]} tiempo="monthly" />
+        <Card card={cards[5]} tiempo="monthly" />
       </Profile>
 
       {/* <style jsx>
@@ -244,4 +244,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Monthly;
