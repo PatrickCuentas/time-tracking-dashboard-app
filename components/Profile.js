@@ -45,17 +45,17 @@ const Profile = ({ children, focus }) => {
           <ul className="flex space-x-14 cursor-pointer">
             <li className="hover:text-neutral-pale_blue">
               <Link href="/">
-                <a className={time[0].focus && `text-white`}>Daily</a>
+                <a className={time[0].focus ? `text-white` : null}>Daily</a>
               </Link>
             </li>
             <li className="hover:text-neutral-pale_blue">
               <Link href="/weekly">
-                <a className={time[1].focus && `text-white`}>Weekly</a>
+                <a className={time[1].focus ? `text-white` : null}>Weekly</a>
               </Link>
             </li>
             <li className="hover:text-neutral-pale_blue">
               <Link href="/monthly">
-                <a className={time[2].focus && `text-white`}>Monthly</a>
+                <a className={time[2].focus ? `text-white` : null}>Monthly</a>
               </Link>
             </li>
           </ul>
