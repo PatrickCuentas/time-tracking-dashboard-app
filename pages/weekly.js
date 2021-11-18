@@ -2,6 +2,7 @@ import Head from "next/head";
 import "tailwindcss/tailwind.css";
 import Card from "../components/Card";
 import Profile from "../components/Profile";
+
 const Weekly = () => {
   const cards = [
     {
@@ -9,7 +10,7 @@ const Weekly = () => {
       color: "bg-primary-light_red",
       icon: (
         <svg
-          className="absolute right-8 opacity-50"
+          className="absolute right-8 opacity-30"
           width="79"
           height="79"
           xmlns="http://www.w3.org/2000/svg"
@@ -213,9 +214,8 @@ const Weekly = () => {
       },
     },
   ];
-
   return (
-    <div className="grid place-content-center text-lg font-rubik bg-neutral-very_dark_blue">
+    <div className="grid place-content-center 2xl:h-screen text-lg font-rubik bg-neutral-very_dark_blue">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

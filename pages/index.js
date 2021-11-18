@@ -2,6 +2,7 @@ import Head from "next/head";
 import "tailwindcss/tailwind.css";
 import Card from "../components/Card";
 import Profile from "../components/Profile";
+
 const Home = () => {
   const cards = [
     {
@@ -9,7 +10,7 @@ const Home = () => {
       color: "bg-primary-light_red",
       icon: (
         <svg
-          className="absolute right-8 opacity-50"
+          className="absolute right-8 opacity-30"
           width="79"
           height="79"
           xmlns="http://www.w3.org/2000/svg"
@@ -213,9 +214,8 @@ const Home = () => {
       },
     },
   ];
-
   return (
-    <div className="grid place-content-center text-lg font-rubik bg-neutral-very_dark_blue">
+    <div className="grid place-content-center 2xl:h-screen text-lg font-rubik bg-neutral-very_dark_blue">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -223,7 +223,7 @@ const Home = () => {
           href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
           rel="stylesheet"
         ></link>
-        <title>TimeTrackingApp</title>
+        <title>Time Tracking Dashboard</title>
       </Head>
 
       <Profile focus="daily">
@@ -235,11 +235,15 @@ const Home = () => {
         <Card card={cards[5]} tiempo="daily" />
       </Profile>
 
-      {/* <style jsx>
+      <style jsx>
         {`
-
+          @media screen and (min-height: 1293px) {
+            * {
+              height: 100vh;
+            }
+          }
         `}
-      </style> */}
+      </style>
     </div>
   );
 };
